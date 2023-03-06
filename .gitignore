@@ -36,6 +36,7 @@ dist/
 # production
 /build
 !/src/components/
+!/src/
 
 
 # misc
