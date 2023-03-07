@@ -5,7 +5,16 @@ yarn-debug.log*
 yarn-error.log*
 
 # Build files
-build/
+# Ignore everything in the build directory except the src directory
+/build/*
+!/build/src
+
+# Ignore the root-level build files
+/build/*
+!/*.html
+!/*.js
+!/*.css
+
 dist/
 *.html
 *.js
