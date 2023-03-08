@@ -114,8 +114,8 @@ span.navbar-text {
     align-items: center;
 }
 .social-icon {
-  display: inline-block;
-  margin-left: 14px;
+    display: inline-block;
+    margin-left: 14px;
 }
 .social-icon a {
     width: 42px;
@@ -299,6 +299,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .txt-rotate > .wrap {
   border-right: 0.08em solid #666;
 }
+
 /************ Skills Css ************/
 .skill {
   padding: 0 0 50px 0;
@@ -338,7 +339,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 40%;
   z-index: -4;
 }
-
 
 /************ Projects Css ************/
 .project {
@@ -465,6 +465,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   right: 0;
   z-index: -4;
 }
+/************ Projects Css ************/
 .contact {
   background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
   padding: 60px 0 200px 0;
