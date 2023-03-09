@@ -19,7 +19,7 @@ export const ProjectCard = ({ title, description, imgUrl }) => {
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
-        <img src={imgUrl} alt={title} />
+        <img src={imgUrl} alt={title} className="project-card-img" />
         {hovered && (
           <div className="overlay">
             <h4>{title}</h4>
