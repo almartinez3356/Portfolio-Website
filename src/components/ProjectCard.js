@@ -1,14 +1,32 @@
-import { Col } from 'react-bootstrap';
+import React, { useState } from "react";
+import { Col } from "react-bootstrap";
+
 export const ProjectCard = ({ title, description, imgUrl }) => {
-    return (
-        <Col sm={6} md={4}>
-            <div className="project-imgbx">
-                <img src={imgUrl} />
-                <div className="proj-txtx">
-                    <h4>{title}</h4>
-                    <span>{description}</span>
-                </div>
-            </div>
-        </Col>
-    )
-}
+  const [hovered, setHovered] = useState(false);
+
+  const handleMouseEnter = () => {
+    setHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setHovered(false);
+  };
+
+  return (
+    <Col lg={4} md={6}>
+      <div
+        className="project-card"
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+      >
+        <img src={imgUrl} alt={title} />
+        {hovered && (
+          <div className="overlay">
+            <h4>{title}</h4>
+            <p>{description}</p>
+          </div>
+        )}
+      </div>
+    </Col>
+  );
+};
