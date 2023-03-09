@@ -34,7 +34,13 @@ export const Skills = () => {
                             <h2>
                                 Skills
                             </h2>
-                            <p>Skills text</p>
+                            <p>Aside from computational thinking, which is what I find most important when doing anything in tech, my relevant coursework includes the following:
+                                 - COSC 1336 Fundamentals of Programming 1 (Python)
+- COSC 1337 Programming Fundamentals 2 (C++)
+- COSC 2436 Data Structures and Algorithms (C++)
+- ITNW 1325 Fundamentals of Networking Technologies (Linux)
+- ITSC 1307 Unix Operating System 1 (Unix/Linux)
+- ITSE 1311 Beginning Web Programming </p>
                             <Carousel responsive={responsive} infinite={true} className="skill-slider">
                                 <div className="item">
                                     <img src={meter1} alt="Image" />
